@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Input Type</title>
+</head>
+<body style="height: 3000px;">
+    <h2>Using Input Type</h2>
+
+    <input type="button" value="This is a Button">
+    <br><br>
+    <input type="checkbox" value="This is Checkbox"> This is a Checkbox
+    <br>
+    <input type="checkbox" value="This is Checkbox">
+    <label for="checkbox"> This is a Checkbox </label>
+    <br><br>
+    <input type="file">
+    <br><br>
+    <input type="image" src="bgimage.jpg" width="50" height="50">
+    <br><br>
+    <label for="text">First Name:</label>
+    <input type="text">
+    <br><br>
+    <label for="text">Last Name:</label>
+    <input type="text">
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password">
+    <br><br>
+
+    <form>
+        <fieldset>
+            <legend>Sign Up Form</legend>
+            <br>
+            <label for="username"> Username: </label>
+            <input type="username" name="user" placeholder="Username" required>
+            <br><br>
+            <label for="email"> Email: </label>
+            <input type="email" name="email" placeholder="Email" required>
+            <br><br>
+            <label for="password"> Password: </label>
+            <input type="password" name="pass" placeholder="Password">
+            <br><br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <br><br>
+            <input type="submit" onclick="alert('WELCOME!')"> &nbsp;
+            <input type="reset" name="res">
+            &nbsp;
+            <button onclick="window.location.href='index.html';">Cancel</button>
+
+        </fieldset>
+    </form>
+
+    <br><br>
+    <label for="birthday">Birthday: </label>
+    <input type="date" name="birthday">
+
+    <br><br>
+    <label for="date and time">Date and Time: </label>
+    <input type="datetime-local" name="date">
+
+    <br><br>
+    <label for="search">Search: </label>
+    <input type="search" name="search">
+
+    <br><br>
+    <label for="city">City: </label>
+    <select name="city">
+        <option></option>
+        <option>Taguig</option>
+        <option>Pasay</option>
+        <option>Makati</option>
+        <option>Pasig</option>
+
+    </select>
+
+    <br><br>
+    <label for="browsers">Choose your Browser: </label>
+    <input list="browsers" name="browser" id="br">
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Chrome">
+        <option value="Firefox">
+    </datalist>
+
+    <br><br>
+    <label for="textarea">Comment</label>
+    <textarea name="message" rows="5" cols="50" placeholder="Your comment here...."></textarea>
+
+
+
+</body>
+</html>
